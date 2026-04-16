@@ -1,0 +1,122 @@
+:root {
+    --main: #f6f6f6;
+    --card: #c8d1d0;
+    --card-end: #dcdcda13;
+    --description: #404445;
+    --icon: #87898a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main);
+}
+
+/* CARD */
+.card {
+    height: 500px;
+    width: 400px;
+    background-color: white;
+    padding: 12px;
+    border-radius: 18px;
+}
+
+.card-inner {
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(180deg, var(--card), var(--card-end) 60%);
+}
+
+.card-inner img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* CONTENT */
+.card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 30px;
+    background: linear-gradient(to top, rgba(255,255,255,0.9), transparent);
+}
+
+/* TITLE */
+.card-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.card-title h2 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.card-title img {
+    height: 30px;
+    width: 30px;
+}
+
+/* DESCRIPTION */
+.card-content p {
+    font-size: 16px;
+    color: var(--description);
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* LEFT STATS */
+.card-stats {
+    display: flex;
+    gap: 25px;
+}
+
+.card-footer p {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.card-footer p i {
+    color: var(--icon);
+    margin-right: 6px;
+}
+
+/* BUTTON */
+.card-footer button {
+    border: none;
+    padding: 10px 28px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease;
+}
+
+.card-footer button:hover {
+    transform: translateY(-2px);
+}
