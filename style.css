@@ -53,6 +53,17 @@ body {
     background: linear-gradient(to top, rgba(255,255,255,0.9), transparent);
 }
 
+.card:hover .card-content {
+    transform: translateY(-50%);
+    transition: 0.7s ease;
+    background: none;
+    
+}
+
+.card:hover .profile-img {
+    opacity: 0.4;
+}
+
 /* TITLE */
 .card-title {
     display: flex;
